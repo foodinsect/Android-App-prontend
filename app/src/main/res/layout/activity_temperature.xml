@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:paddingHorizontal="80dp">
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/addbtn"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="전화상담 병원"
+                    android:textAppearance="@style/title_medium"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/addbtn"
+                android:layout_marginLeft="24dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="TIP"
+                    android:textAppearance="@style/title_medium"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/feed_contai"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/feed_contai"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTemperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="38.7°C"
+                    android:layout_marginTop="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="@style/display_medium" />
+
+                <ImageView
+                    android:layout_width="330dp"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="24dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/line"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="48dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="아세트 아미노펜"
+                            android:textAppearance="@style/lable_large"
+                            />
+                        <SeekBar
+                            android:id="@+id/aminopen"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:max="10"
+                            android:progress="2" />
+
+                        <!-- 슬라이더 값 표시 -->
+                        <TextView
+                            android:id="@+id/amiAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:text="2.0 / 9.5 cc"
+                            android:textAppearance="@style/body_large" />
+
+                    </LinearLayout>
+                    <!-- 수유량 조절을 위한 슬라이더 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="48dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="이부프로펜"
+                            android:textAppearance="@style/lable_large"
+                            />
+                        <SeekBar
+                            android:id="@+id/ebupropen"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:max="10"
+                            android:progress="4" />
+
+                        <!-- 슬라이더 값 표시 -->
+                        <TextView
+                            android:id="@+id/ebuAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:text="4.0 / 9.5 cc"
+                            android:textAppearance="@style/body_large" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="330dp"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="24dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/line"
+                    />
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="20dp">
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:text="약 성분을 선택하세요"
+                        android:textAppearance="@style/lable_large"
+                        android:textColor="#101828"/>
+
+                    <CheckBox
+                        android:id="@+id/cb1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="아세트아미노펜"
+                        android:textColor="#101828"
+                        android:textAppearance="@style/lable_medium"/>
+
+                    <CheckBox
+                        android:id="@+id/cb2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="이부프로펜"
+                        android:textAppearance="@style/lable_medium"
+                        android:textColor="#101828"/>
+
+                    <CheckBox
+                        android:id="@+id/cb3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="덱시부프로펜"
+                        android:textAppearance="@style/lable_medium"
+                        android:textColor="#101828"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginRight="36dp"
+                    android:background="@drawable/input">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="2sp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="아이의 열은 몇도 인가요?"
+                        android:textAppearance="@style/lable_medium"
+                        android:textColor="#667085" />
+
+                    <EditText
+                        android:id="@+id/ingredients"
+                        android:layout_width="250dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@android:color/transparent"
+                        android:hint="체온계로 측정한 온도를 입력해주세요. ex) 38.5°C"
+                        android:inputType="text"
+                        android:textAppearance="@style/lable_medium" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="36dp"
+                    android:background="@drawable/input">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="2sp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="아이의 현재 몸무게를 입력해주세요!"
+                        android:textAppearance="@style/lable_medium"
+                        android:textColor="#667085" />
+
+                    <EditText
+                        android:id="@+id/kg"
+                        android:layout_width="250dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@android:color/transparent"
+                        android:hint="아이의 몸무게를 입력해주세요! ex) 17 kg"
+                        android:inputType="text"
+                        android:textAppearance="@style/lable_medium" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="36dp"
+                    android:background="@drawable/input">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="2sp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="얼마나 먹였나요?"
+                        android:textAppearance="@style/lable_medium"
+                        android:textColor="#667085" />
+
+                    <EditText
+                        android:id="@+id/medicine"
+                        android:layout_width="250dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@android:color/transparent"
+                        android:hint="약물의 투여량을 입력해주세요! ex) 2 cc"
+                        android:inputType="text"
+                        android:textAppearance="@style/lable_medium" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
+</LinearLayout>

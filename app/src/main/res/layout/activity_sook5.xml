@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/home_select"
+            android:layout_width="38dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="@drawable/ct_home"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/event"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="상품/특가"
+                android:textAppearance="@style/lable_large"
+                android:textColor="#98A2B3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/food"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="식단"
+                android:textAppearance="@style/lable_large"
+                android:textColor="#98A2B3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/diary"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="육아 일기"
+                android:textAppearance="@style/lable_large"
+                android:textColor="#98A2B3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pt"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="커뮤니티"
+                android:textAppearance="@style/lable_large"
+                android:textColor="#98A2B3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/kidzone"
+            android:layout_width="66dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="키즈존"
+                android:textAppearance="@style/lable_large"
+                android:textColor="#98A2B3" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="395dp"
+                    android:layout_height="225dp"
+                    android:src="@drawable/rectangle"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="200dp">
+
+                    <View
+                        android:layout_width="16dp"
+                        android:layout_height="8dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/rectangle_1" />
+
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/rectangle_2"/>
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/rectangle_2"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="16dp"/>
+
+            <TextView
+                android:layout_marginLeft="22dp"
+                android:layout_width="68dp"
+                android:layout_height="24dp"
+                android:text="반가워요!"
+                android:textAppearance="@style/title_medium"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/foodselect"
+                    android:layout_width="190dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/shortcut_shadow"
+                    android:clipChildren="false"
+                    android:clipToPadding="false">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:layout_marginTop="34dp"
+                        android:text="오늘의 식단"
+                        android:textAppearance="@style/title_medium" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:layout_marginTop="69dp"
+                        android:text="맞춤형 식단을"
+                        android:textAppearance="@style/lable_medium" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:layout_marginTop="83dp"
+                        android:text="추천 받아봐요!"
+                        android:textAppearance="@style/lable_medium" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="147dp"
+                        android:layout_marginTop="34dp"
+                        android:src="@drawable/right_arrow" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/kidselect"
+                    android:layout_width="190dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/shortcut_shadow"
+                    android:clipChildren="false"
+                    android:clipToPadding="false">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:layout_marginTop="34dp"
+                        android:text="키즈존"
+                        android:textAppearance="@style/title_medium" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:layout_marginTop="69dp"
+                        android:text="아이와 함께하는 일상"
+                        android:textAppearance="@style/lable_medium" />
+
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="147dp"
+                        android:layout_marginTop="34dp"
+                        android:src="@drawable/right_arrow" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/diaryselect"
+                    android:layout_width="190dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/shortcut_shadow"
+                    android:clipChildren="false"
+                    android:clipToPadding="false">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:layout_marginTop="34dp"
+                        android:text="육아일기"
+                        android:textAppearance="@style/title_medium" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:layout_marginTop="69dp"
+                        android:text="우리 아이의 일상,"
+                        android:textAppearance="@style/lable_medium" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:layout_marginTop="83dp"
+                        android:text="추억으로 남겨볼까요?"
+                        android:textAppearance="@style/lable_medium" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="147dp"
+                        android:layout_marginTop="34dp"
+                        android:src="@drawable/right_arrow" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/eventselect"
+                    android:layout_width="190dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/shortcut_shadow"
+                    android:clipChildren="false"
+                    android:clipToPadding="false">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:layout_marginTop="34dp"
+                        android:text="상품/특가"
+                        android:textAppearance="@style/title_medium" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:layout_marginTop="69dp"
+                        android:text="인기템, 최저가를"
+                        android:textAppearance="@style/lable_medium" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:layout_marginTop="83dp"
+                        android:text="한눈에 확인해요!"
+                        android:textAppearance="@style/lable_medium" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="147dp"
+                        android:layout_marginTop="34dp"
+                        android:src="@drawable/right_arrow" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tapbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/taphome"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:src="@drawable/bar_home_selected" />
+
+            <ImageView
+                android:id="@+id/tapevent"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:src="@drawable/bar_shopping" />
+
+            <ImageView
+                android:id="@+id/tapfood"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:src="@drawable/bar_calendar" />
+
+            <ImageView
+                android:id="@+id/tappt"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:src="@drawable/bar_user" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:src="@drawable/bar_setting" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="54dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/taphome1"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:text="홈"
+                android:textAppearance="@style/lable_small"
+                android:gravity="center"
+                android:textColor="#2C901C" />
+
+            <TextView
+                android:id="@+id/tapevent1"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:text="상품/특가"
+                android:textAppearance="@style/lable_small"
+                android:gravity="center"
+                android:textColor="#101828" />
+
+            <TextView
+                android:id="@+id/tapfood1"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:text="식단"
+                android:textAppearance="@style/lable_small"
+                android:gravity="center"
+                android:textColor="#101828" />
+
+            <TextView
+                android:id="@+id/tappt1"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:text="커뮤니티"
+                android:textAppearance="@style/lable_small"
+                android:gravity="center"
+                android:textColor="#101828" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:text="설정"
+                android:textAppearance="@style/lable_small"
+                android:gravity="center"
+                android:textColor="#101828" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <View
+        android:id="@+id/lifesavers"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/lifesavers1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="매 순간의 소중한 기록"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:orientation="vertical"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="쑥쑥과 함께"
+        android:gravity="center"
+        android:textColor="#667085"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="아이의 성장을 추억으로 남겨보세요!"
+        android:textColor="#667085"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="3dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/rectangle_1" />
+
+
+        <View
+            android:id="@+id/rectangle12"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="3dp"
+            android:background="@drawable/rectangle_2"/>
+
+
+        <View
+            android:id="@+id/rectangle13"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="3dp"
+            android:background="@drawable/rectangle_2"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" />
+
+
+    <RelativeLayout
+        android:id="@+id/btn"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="342dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="다음"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="154dp"
+            android:textColor="#FFFFFF"
+            android:textAppearance="@style/button_medium"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginVertical="8dp">
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="21dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="26dp"
+        android:textSize="16dp"
+        android:textAppearance="@style/lable_medium"
+        android:text="01"/>
+
+    <ImageView
+        android:id="@+id/image_item"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="25dp"
+        android:src="@drawable/sodokgi"/>
+
+    <LinearLayout
+        android:layout_width="170dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="28dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="2dp"
+            android:text="유팡 젖병 소독기"
+            android:textColor="#101828"
+            android:textAppearance="@style/title_small"/>
+
+        <TextView
+            android:id="@+id/priceTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:text="339,000원"
+            android:textAppearance="@style/lable_small"
+            android:textColor="#344054"/>
+
+
+        <TextView
+            android:id="@+id/commentTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:text="#소독기계의 1인자"
+            android:textAppearance="@style/lable_small"
+            android:textColor="#667085"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/star"/>
+
+            <TextView
+                android:id="@+id/my_reviewTxt"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_height="16dp"
+                android:textAppearance="@style/lable_small"
+                android:textColor="#1D2939"
+                android:text="사용자 리뷰(4,999+)"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/bookmark"/>
+
+</LinearLayout>

@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/home_select"
+            android:layout_width="34dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="홈"
+                android:textAppearance="@style/lable_large"
+                android:textColor="#98A2B3"/>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/sale_select"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="상품/특가"
+                android:textAppearance="@style/lable_large"
+                android:textColor="#98A2B3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bob_select"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="식단"
+                android:textAppearance="@style/lable_large"
+                android:textColor="#98A2B3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/baby_select"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/diary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="육아 일기"
+                android:textAppearance="@style/lable_large"
+                android:textColor="#98A2B3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/community_select"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="커뮤니티"
+                android:textAppearance="@style/lable_large"
+                android:textColor="#98A2B3"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/kidzone_select"
+            android:layout_width="64dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ct_kidszone"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="8dp"
+                        android:text="테마파크"
+                        android:textAppearance="@style/headline_medium"
+                        android:textColor="#101828" />
+                </RelativeLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="24dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/themapark1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="140dp"
+                                    android:layout_height="140dp"
+                                    android:layout_marginTop="21dp"
+                                    android:src="@drawable/theme_skate" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="그랜드하얏트서울"
+                                    android:textAppearance="@style/title_medium" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="24dp"
+                                    android:text="아이스링크"
+                                    android:textAppearance="@style/title_medium" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="스케이트 보조 장치가 있어서"
+                                    android:textAppearance="@style/lable_medium"
+                                    android:textColor="#667085" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="24dp"
+                                    android:text="쉽게 탈 수 있어요."
+                                    android:textAppearance="@style/lable_medium"
+                                    android:textColor="#667085" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="140dp"
+                                    android:layout_height="140dp"
+                                    android:layout_marginTop="21dp"
+                                    android:src="@drawable/theme_hanok" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="남산골한옥마을"
+                                    android:textAppearance="@style/title_medium" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="전통예술과 현대예술을"
+                                    android:textAppearance="@style/lable_medium"
+                                    android:textColor="#667085" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="24dp"
+                                    android:text="동시에 체험할 수 있는 곳"
+                                    android:textAppearance="@style/lable_medium"
+                                    android:textColor="#667085" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="140dp"
+                                    android:layout_height="140dp"
+                                    android:layout_marginTop="21dp"
+                                    android:src="@drawable/theme_alive" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="박물관은살아있다"
+                                    android:textAppearance="@style/title_medium" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="인사동점"
+                                    android:textAppearance="@style/title_medium" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="포토존이 가득한 테마파크 "
+                                    android:textAppearance="@style/lable_medium"
+                                    android:textColor="#667085" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="140dp"
+                                    android:layout_height="140dp"
+                                    android:layout_marginTop="21dp"
+                                    android:src="@drawable/theme_dynamic" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="다이나믹메이즈"
+                                    android:textAppearance="@style/title_medium" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="인사동"
+                                    android:textAppearance="@style/title_medium" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="실내에서 익사이팅하게"
+                                    android:textAppearance="@style/lable_medium"
+                                    android:textColor="#667085" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="탈출게임을 해봐요."
+                                    android:textAppearance="@style/lable_medium"
+                                    android:textColor="#667085" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </HorizontalScrollView>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="8dp"
+                        android:text="교육/체험/관람"
+                        android:textAppearance="@style/headline_medium"
+                        android:textColor="#101828" />
+                </RelativeLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="24dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="140dp"
+                                    android:layout_height="140dp"
+                                    android:layout_marginTop="21dp"
+                                    android:src="@drawable/edu_library" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="서울특별시교육청"
+                                    android:textAppearance="@style/title_medium" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="24dp"
+                                    android:text="남산도서관"
+                                    android:textAppearance="@style/title_medium" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="남산뷰, 벚꽃뷰, 단풍뷰까지!"
+                                    android:textAppearance="@style/lable_medium"
+                                    android:textColor="#667085" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="24dp"
+                                    android:text="실내와 야외 모두 멋진 도서관"
+                                    android:textAppearance="@style/lable_medium"
+                                    android:textColor="#667085" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="140dp"
+                                    android:layout_height="140dp"
+                                    android:layout_marginTop="21dp"
+                                    android:src="@drawable/edu_wow" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="우와아트랩"
+                                    android:textAppearance="@style/title_medium" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="소리와 움직임으로 감각을"
+                                    android:textAppearance="@style/lable_medium"
+                                    android:textColor="#667085" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="24dp"
+                                    android:text="깨우는 예술클래스"
+                                    android:textAppearance="@style/lable_medium"
+                                    android:textColor="#667085" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="140dp"
+                                    android:layout_height="140dp"
+                                    android:layout_marginTop="21dp"
+                                    android:src="@drawable/edu_bisket" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="비스킷"
+                                    android:textAppearance="@style/title_medium" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="온가족이 쉽게 즐기는"
+                                    android:textAppearance="@style/lable_medium"
+                                    android:textColor="#667085" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="복합문화공간"
+                                    android:textAppearance="@style/lable_medium"
+                                    android:textColor="#667085" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="140dp"
+                                    android:layout_height="140dp"
+                                    android:layout_marginTop="21dp"
+                                    android:src="@drawable/edu_project" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="감정선프로젝트"
+                                    android:textAppearance="@style/title_medium" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="경리단 본점"
+                                    android:textAppearance="@style/title_medium" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="화려한 조명 아래의 꼬마 화가"
+                                    android:textAppearance="@style/lable_medium"
+                                    android:textColor="#667085" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </HorizontalScrollView>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="8dp"
+                        android:text="스포츠/레저"
+                        android:textAppearance="@style/headline_medium"
+                        android:textColor="#101828" />
+                </RelativeLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="140dp"
+                                    android:layout_height="140dp"
+                                    android:layout_marginLeft="24dp"
+                                    android:layout_marginTop="21dp"
+                                    android:src="@drawable/sport_skate" />
+
+                                <TextView
+                                    android:layout_width="145dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginLeft="24dp"
+                                    android:text="서울광장스케이트장"
+                                    android:textAppearance="@style/title_medium" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginLeft="24dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="천원으로 이용할 수 있는"
+                                    android:textAppearance="@style/lable_medium"
+                                    android:textColor="#667085" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginLeft="24dp"
+                                    android:text="도심 한복판 스케이트장"
+                                    android:textAppearance="@style/lable_medium"
+                                    android:textColor="#667085" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="140dp"
+                                    android:layout_height="140dp"
+                                    android:layout_marginTop="21dp"
+                                    android:src="@drawable/sport_shoot" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="잠원한강공원"
+                                    android:textAppearance="@style/title_medium" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="24dp"
+                                    android:text="눈썰매장"
+                                    android:textAppearance="@style/title_medium" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="한강공원으로 썰매 타러가요"
+                                    android:textAppearance="@style/lable_medium"
+                                    android:textColor="#667085" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </HorizontalScrollView>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="8dp"
+                        android:text="숙박/캠핑"
+                        android:textAppearance="@style/headline_medium"
+                        android:textColor="#101828" />
+                </RelativeLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="140dp"
+                                    android:layout_height="140dp"
+                                    android:layout_marginLeft="24dp"
+                                    android:layout_marginTop="21dp"
+                                    android:src="@drawable/camp_hotel" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginLeft="24dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="서울 신라호텔"
+                                    android:textAppearance="@style/title_medium" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginLeft="24dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="5성급 호텔에서 호캉스"
+                                    android:textAppearance="@style/lable_medium"
+                                    android:textColor="#667085" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="140dp"
+                                    android:layout_height="140dp"
+                                    android:layout_marginTop="21dp"
+                                    android:src="@drawable/camp_lotte" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="롯데호텔 서울"
+                                    android:textAppearance="@style/title_medium" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="모든 걸 갖춘 5성급 호텔"
+                                    android:textAppearance="@style/lable_medium"
+                                    android:textColor="#667085" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="140dp"
+                                    android:layout_height="140dp"
+                                    android:layout_marginTop="21dp"
+                                    android:src="@drawable/camp_taewon" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="몬드리안 이태원"
+                                    android:textAppearance="@style/title_medium" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="젊은 감성에 힙한 맛집과"
+                                    android:textAppearance="@style/lable_medium"
+                                    android:textColor="#667085" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="15dp"
+                                    android:text="편집샵이 많은 호텔"
+                                    android:textAppearance="@style/lable_medium"
+                                    android:textColor="#667085" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="140dp"
+                                    android:layout_height="140dp"
+                                    android:layout_marginTop="21dp"
+                                    android:src="@drawable/edu_project" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="현대 레지던스"
+                                    android:textAppearance="@style/title_medium" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="서울 중심에 위치한"
+                                    android:textAppearance="@style/lable_medium"
+                                    android:textColor="#667085" />
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="15dp"
+                                    android:text="가성비 호텔"
+                                    android:textAppearance="@style/lable_medium"
+                                    android:textColor="#667085" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tapbar"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/taphome"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:src="@drawable/bar_home" />
+
+            <ImageView
+                android:id="@+id/tapevent"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:src="@drawable/bar_shopping" />
+
+            <ImageView
+                android:id="@+id/tapfood"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:src="@drawable/bar_calendar" />
+
+            <ImageView
+                android:id="@+id/tappt"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:src="@drawable/bar_user" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:src="@drawable/bar_setting" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="54dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/taphome1"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:text="홈"
+                android:textAppearance="@style/lable_small"
+                android:gravity="center"
+                android:textColor="#101828" />
+
+            <TextView
+                android:id="@+id/tapevent1"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:text="상품/특가"
+                android:textAppearance="@style/lable_small"
+                android:gravity="center"
+                android:textColor="#101828" />
+
+            <TextView
+                android:id="@+id/tapfood1"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:text="식단"
+                android:textAppearance="@style/lable_small"
+                android:gravity="center"
+                android:textColor="#101828" />
+
+            <TextView
+                android:id="@+id/tappt1"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:text="커뮤니티"
+                android:textAppearance="@style/lable_small"
+                android:gravity="center"
+                android:textColor="#101828" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:text="설정"
+                android:textAppearance="@style/lable_small"
+                android:gravity="center"
+                android:textColor="#101828" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

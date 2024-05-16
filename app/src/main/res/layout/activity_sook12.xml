@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp">
+
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:layout_width="115dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="38dp"
+            android:layout_marginTop="25dp"
+            android:background="#FFFFFF">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_wrapper2"/>
+
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/menu_item"
+            android:layout_width="115dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="25dp"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_wrapper3"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="352dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="36dp"
+                    android:background="@drawable/input"
+                    android:clipToOutline="true">
+
+                    <TextView
+
+                        android:layout_width="21dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="5sp"
+                        android:text="월령"
+                        android:textAppearance="@style/lable_small"
+                        android:textColor="#667085"
+                        />
+
+                    <EditText
+                        android:id="@+id/age"
+                        android:layout_width="120dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@android:color/transparent"
+                        android:hint="월령을 입력하세요"
+                        android:inputType="text"
+                        android:textAppearance="@style/lable_medium" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+
+                    android:layout_width="141dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="20dp"
+
+                    android:background="@drawable/input"
+                    android:clipToOutline="true">
+
+                    <TextView
+                        android:id="@+id/email_f"
+                        android:layout_width="40dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="5sp"
+                        android:text="알레르기"
+                        android:textAppearance="@style/lable_small"
+                        android:textColor="#667085"
+                        />
+
+                    <EditText
+                        android:id="@+id/allergy"
+                        android:layout_width="104dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@android:color/transparent"
+                        android:hint="ex) 달걀 알레르기"
+                        android:inputType="text"
+                        android:textAppearance="@style/lable_medium"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+
+                android:layout_width="280dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="36dp"
+                android:background="@drawable/input">
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="2sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="보유 재료"
+                    android:textAppearance="@style/lable_medium"
+                    android:textColor="#667085" />
+
+                <EditText
+                    android:id="@+id/ingredients"
+                    android:layout_width="250dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:hint="집에서 사용가능한 재료들을 입력해주세요."
+                    android:inputType="text"
+                    android:textAppearance="@style/lable_medium" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="280dp"
+                android:layout_height="107dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="36dp"
+                android:background="@drawable/input">
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="2sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="기타 사항"
+                    android:textAppearance="@style/lable_small"
+                    android:textColor="#667085" />
+                <EditText
+                    android:id="@+id/notes"
+                    android:layout_width="250dp"
+                    android:layout_height="72dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:hint="ex) 칼슘 부족"
+                    android:inputType="text"
+                    android:textAppearance="@style/lable_medium" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/btn"
+                android:layout_width="280dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:background="@drawable/btn">
+
+
+                <TextView
+                    android:layout_width="56dp"
+                    android:layout_height="24dp"
+                    android:text="입력하기"
+                    android:lineSpacingExtra="5sp"
+                    android:textColor="#FFFFFF"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

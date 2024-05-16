@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/home_select"
+            android:layout_width="38dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="홈"
+                android:textAppearance="@style/lable_large"
+                android:textColor="#98A2B3"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sale_select"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/ct_event"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bob_select"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="식단"
+                android:textAppearance="@style/lable_large"
+                android:textColor="#98A2B3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/baby_select"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/diary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="육아 일기"
+                android:textAppearance="@style/lable_large"
+                android:textColor="#98A2B3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/community_select"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="커뮤니티"
+                android:textAppearance="@style/lable_large"
+                android:textColor="#98A2B3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/kidzone_select"
+            android:layout_width="66dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/kidzone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="키즈존"
+                android:textAppearance="@style/lable_large"
+                android:textColor="#98A2B3" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="232dp"
+                        android:src="@drawable/image_examp" />
+
+                    <TextView
+                        android:layout_width="207dp"
+                        android:layout_height="72dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="36dp"
+                        android:textAppearance="@style/headline_medium"
+                        android:textSize="25dp"
+                        android:text="아이들과 가기 좋은 수영장 있는 숙소"
+                        android:textColor="#FFFFFF"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="200dp">
+
+                        <View
+                            android:layout_width="16dp"
+                            android:layout_height="8dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/rectangle_1" />
+
+                        <View
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/rectangle_2"/>
+                        <View
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/rectangle_2"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="22dp"/>
+
+            <TextView
+                android:layout_marginLeft="23dp"
+                android:layout_width="106dp"
+                android:layout_height="28dp"
+                android:text="육아 템 랭킹"
+                android:textAppearance="@style/title_large"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="87dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/some_id_green"
+                    android:clipChildren="false"
+                    android:clipToPadding="false">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginTop="7dp"
+                        android:textSize="13sp"
+                        android:text="베이비캠"
+                        android:textColor="#125D07"
+                        android:textAppearance="@style/lable_medium"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/some_id_neutral"
+                    android:clipChildren="false"
+                    android:clipToPadding="false">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="7dp"
+                        android:textSize="13sp"
+                        android:textAppearance="@style/lable_medium"
+                        android:textColor="#98A2B3"
+                        android:text="유모차"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="53dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/some_id_neutral"
+                    android:clipChildren="false"
+                    android:clipToPadding="false">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="7dp"
+                        android:textSize="13sp"
+                        android:textAppearance="@style/lable_medium"
+                        android:textColor="#98A2B3"
+                        android:text="분유"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="64dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/some_id_neutral"
+                    android:clipChildren="false"
+                    android:clipToPadding="false">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="7dp"
+                        android:text="체온계"
+                        android:textAppearance="@style/lable_medium"
+                        android:textColor="#98A2B3"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="53dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/some_id_neutral"
+                    android:clipChildren="false"
+                    android:clipToPadding="false">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="7dp"
+                        android:textSize="13sp"
+                        android:textAppearance="@style/lable_medium"
+                        android:textColor="#98A2B3"
+                        android:text="인형"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="53dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/some_id_neutral"
+                    android:clipChildren="false"
+                    android:clipToPadding="false">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="7dp"
+                        android:textSize="13sp"
+                        android:textAppearance="@style/lable_medium"
+                        android:textColor="#98A2B3"
+                        android:text="베개"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/itemview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+<!-- 탭바 -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tapbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/taphome"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:src="@drawable/bar_home" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:src="@drawable/bar_shopping_selected" />
+
+            <ImageView
+                android:id="@+id/tapfood"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:src="@drawable/bar_calendar" />
+
+            <ImageView
+                android:id="@+id/tappt"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:src="@drawable/bar_user" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:src="@drawable/bar_setting" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="54dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/taphome1"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:text="홈"
+                android:textAppearance="@style/lable_small"
+                android:gravity="center"
+                android:textColor="#101828" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:text="상품/특가"
+                android:textAppearance="@style/lable_small"
+                android:gravity="center"
+                android:textColor="#2C901C" />
+
+            <TextView
+                android:id="@+id/tapfood1"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:text="식단"
+                android:textAppearance="@style/lable_small"
+                android:gravity="center"
+                android:textColor="#101828" />
+
+            <TextView
+                android:id="@+id/tappt1"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:text="커뮤니티"
+                android:textAppearance="@style/lable_small"
+                android:gravity="center"
+                android:textColor="#101828" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:text="설정"
+                android:textAppearance="@style/lable_small"
+                android:gravity="center"
+                android:textColor="#101828" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+<!--// layout 끝-->
